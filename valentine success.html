@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Img2.gif" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine?</title>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var b = document.querySelector("#No");
+        b.addEventListener("click", change);
+
+        function change() {
+          var i = Math.floor(Math.random() * 300) + 1;
+          var j = Math.floor(Math.random() * 700) + 1;
+          b.style.left = i + "px";
+          b.style.top = j + "px";
+        }
+        function neww() {
+          var text = [
+            "Why nott😔",
+            "Pleaaseeeeee",
+            "I'll love you foreverr",
+            "akin kana pls",
+            "Ako nalang Plss",
+            "I will not cheat on you",
+            "Just press yes",
+          ];
+          var H = document.querySelector("H1");
+
+          H.innerHTML = text[Math.floor(Math.random() * text.length)];
+          document.querySelector("img").src = "cry.gif";
+        }
+        document.querySelector("#No").onclick = neww;
+      });
+
+      function imagechange() {
+        document.querySelector("H1").innerHTML = "❤️❤️YEYYYYY❤️❤️";
+        document.querySelector("#Containerr").style.display = "none";
+        document.querySelector("img").src = "wwww.gif";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("#yes").onclick = imagechange;
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <img src="ImgValentine.gif" alt="happy valentine" />
+      <h1>WILL YOU BE MY VALENTINE?</h1>
+      <div id="Containerr">
+        <div><button id="No">No</button></div>
+        <div><button id="yes">Yes</button></div>
+      </div>
+    </div>
+  </body>
+</html>

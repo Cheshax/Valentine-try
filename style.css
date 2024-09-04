@@ -1,0 +1,46 @@
+
+        body{
+            background-color: white;
+        }
+        img{
+            height: 30vh;
+        }
+
+        button{
+            height: 8vh;
+            width: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 30px;
+            border-radius: 20px;
+            font-weight: 100;
+            background-color : pink;
+            border-color: peachpuff;
+            color: white;
+            
+    
+        }
+
+        #container{
+            height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+        }
+
+        #Containerr{
+            width: 80vh;
+             display: flex; 
+             justify-content: space-around;
+        }
+
+        #No{
+            display: block; position: absolute ; display: flex;
+        }
+        h1{
+            font-size: small;
+        }
